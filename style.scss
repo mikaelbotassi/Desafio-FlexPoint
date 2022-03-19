@@ -1,0 +1,224 @@
+header{
+    background-color: black;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+main{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+ul{
+    list-style: none;
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+form{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input{
+    width: 100%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    
+}
+
+input:focus{
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.styles-input{
+    padding: 5px;
+    margin-top: 20px;
+    border: 1px solid black;
+    border-radius: 0;
+
+}
+
+.styles-frames{
+    width: 100%;
+    height: 30px;
+}
+
+.style-btn{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button{
+    width: 50%;
+    height: 31px;
+    background-color: black;
+    border: none;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s all;
+    box-shadow: 0px 0px 13px -2px rgba(0,0,0,0.41);
+}
+
+button:hover{
+    cursor: pointer;
+    background-color:white;
+    color:black;
+    transform: scale(1.1);
+}
+
+.card-pessoa{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px;
+    height: 200px;
+    box-shadow: 0px 0px 13px -2px rgb(0 0 0 / 41%);
+    width: 300px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.atributo-style{
+    font-weight: bold;
+}
+
+.card-pessoa-atributos{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.my-toastr{
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+    line-height: 5px;
+    height: 50px;
+    justify-content: flex-end;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    float: left;
+    width: 300px;
+    right: -340px;
+    position: fixed;
+    top: 65px;
+    background-color: #cb000000;
+    color: white;
+
+}
+
+.warning{
+    animation: showToastWarning 5s;
+}
+
+.sucess{
+    animation: showToastSucess 5s;
+}
+
+@keyframes showToastWarning{
+    0%{
+        background-color:#cb000000;
+    }
+    25%{
+        right:10px;
+        background-color:#cb0000cb;
+    }
+    50%{
+        right: 10px;
+        background-color:#cb0000
+    }
+    75%{
+        right: 10px;
+        background-color:#cb0000cb;
+    }
+    100%{
+        right: -340px;
+        background-color:#cb000000
+    }
+}
+
+@keyframes showToastSucess{
+    0%{
+        background-color:#cb000000;
+    }
+    25%{
+        right:10px;
+        background-color:#11cb00cb;
+    }
+    50%{
+        right: 10px;
+        background-color:#11cb00;
+    }
+    75%{
+        right: 10px;
+        background-color:#11cb00cb;
+    }
+    100%{
+        right: -340px;
+        background-color:#cb000000
+    }
+}
+
+.toastr-tytle{
+    margin: 0;
+}
+
+.tytle-data{
+    font-size: 10px;
+    font-family: sans-serif;
+    background-color: white;
+    z-index: 1;
+    margin: -12px 0 0 0;
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.style-data{
+    display: flex;
+    flex-direction: column;
+    height: 25px;
+}
